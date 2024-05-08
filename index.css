@@ -1,13 +1,25 @@
 /* Body */
 body {
-    font-family: Arial, sans-serif;
+    font-family:proxima nova,Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background-color: #7469B6;
+
+    color: white;
+    
+}
+.page{
+    font-family:proxima nova,Roboto, Arial, sans-serif;
+    padding: 0;
+    margin-top: 3px;
     margin-left: 5%;
     margin-right: 5%;
-    padding: 0;
-    background-color: #7469B6;
     color: white;
-}
+    width: 90%;
 
+
+}
 .line{
     width:90%;
     height: 1px;
@@ -17,7 +29,7 @@ body {
     background-color: #FFE6E6;
 }
 .break{
-    width: 100%;
+    width: inherit;
     height:20px;
 
 
@@ -30,26 +42,35 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width:100%;
+
+
     /* margin-left: 5%;
     margin-right: 5%; */
-    margin-top:5px;
+
     margin-bottom: 10px;
     
     background-color: #AD88C6;
-    border-top: 3px solid #E1AFD1;
+    border-top: 7px solid #E1AFD1;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-bottom:0px solid black;
+    border-left: 1px solid #FFE6E6;
+    border-right: 1px solid #FFE6E6;
+    border-bottom:1px solid #FFE6E6;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding: 5px;
+    
 }
-header {
-    width: inherit;
-    margin: inherit;
+.hero header {
+    display: border-box;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+
     color: #fff;
     padding: 20px;
     text-align: center;
+
 
 
     
@@ -110,10 +131,21 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    /* margin-left: 5%;
-    margin-right: 5%; */
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top: 2px solid #FFE6E6;
+    border-left: 1px solid #FFE6E6;
+    border-right: 1px solid #FFE6E6;
+    margin-top: 0px;
+
+    border-radius: 50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
+    
 
 }
+
 .image{
     display: flex;
 
@@ -134,20 +166,30 @@ nav {
     border-radius: 100px;
     width: 60vw;
     height: inherit;
-    border-top: 3px solid #E1AFD1
+    border-top: 5px solid #E1AFD1;
+    border-left: 1px solid #E1AFD1;
+    border-right: 1px solid #E1AFD1;
+
 }
 .about h3{
     margin: 15px;
 }
+
 /* link to my blogs and projects*/
 .refer{
     
+    border-bottom: 2px solid #FFE6E6;
+    border-left: 1px solid #FFE6E6;
+    border-right: 1px solid #FFE6E6;
+    border-radius: 50px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: stretch;
     gap: 10px;
     color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     
 
 
@@ -205,8 +247,8 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    margin-bottom: 20px; 
-    margin-top: 5px;
+
+    margin-top: 2px;
 }
 
 footer p {
@@ -216,4 +258,36 @@ footer p {
 .footer {
     max-width: 800px;
     margin: 0 auto;
+}
+.gradient{
+
+    background-image: linear-gradient(to bottom right,#e1afd138,#655c9c);
+    background-position: 40%;
+}
+@media (max-width: 800px) {
+    .main {
+      flex-direction: column;
+      
+    }
+    .about{
+        margin:0px;
+        width:100%;
+    }
+    .blogs{
+        width: 100%;
+    }
+    .projects{
+        width: 100%;
+    }
+    .page{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .hero{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
 }
